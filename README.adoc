@@ -1,4 +1,4 @@
-==The GHOUL
+== The GHOUL
 
 The Great Helpful OpenSCAD Unified Library
 
