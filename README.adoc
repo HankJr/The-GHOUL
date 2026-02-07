@@ -12,6 +12,8 @@ If you don't know OpenSCAD, check it out, it's a magnificent, parametric 3D mode
 
 I'm writing and compiling The GHOUL for myself, however, I realise that some might appreciate The GHOUL, so I'm happy to share and document it, which is what I've done here, in the hope that it may prove to be of some use to you, since
 
+You can find The Ghoul and its documentation here: https://hankjr.ca/theghoul/
+
 [quote, Richard Hirsch (Alan Arkin), "Stand Up Guys"]
 The best thing a person can hope to be in this world, is of some use.
 
