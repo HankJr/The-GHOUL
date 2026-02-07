@@ -2,5 +2,95 @@
 
 The Great Helpful OpenSCAD Unified Library
 
-Hank Jr - Nov 2019
+[quote, Blaise Pascal]
+Since we cannot know all that there is to be known about anything,  we ought to know a little about everything.
 
+== What's The GHOUL?
+
+The GHOUL is the Great Helpful OpenSCAD Unified Library.
+If you don't know OpenSCAD, check it out, it's a magnificent, parametric 3D modelling software, excellent for designing 3D prints. It's powerful, has a very mild learning curve and there is great online support.
+
+I'm writing and compiling The GHOUL for myself, however, I realise that some might appreciate The GHOUL, so I'm happy to share and document it, which is what I've done here, in the hope that it may prove to be of some use to you, since
+
+[quote, Richard Hirsch (Alan Arkin), "Stand Up Guys"]
+The best thing a person can hope to be in this world, is of some use.
+
+=== Why another OpenSCAD library?
+
+I know, there are several OpenSCAD libraries already available online, some decent, some not so much :'(
+
+No library is going to be _just right_ for anyone but the author. You'll have to adapt and expand it, and that's where the trouble starts. To adapt code, you need to understand it, and to understand it, it needs to be clear and well commented or documented. Most of the available libraries are terrible in this regard, and some are not commented _at all_. All this is very frustrating; why share code when it's murkier than the Mekong during the monsoon?
+
+=== The GHOUL aims to be _different_
+
+First and foremost, The GHOUL has _good, clear, documentation and an abundance of comments_. Adapting The GHOUL to your needs is going to be a breeze, because you won't have to stare at a piece of code for an hour to find out what the hell I was thinking; it'll be there for you in the comments or in this excellent documentation, currently it is at around 70K words, equivalent to a 250 page novel. Thank you, you're welcome.
+
+The GHOUL is a _general_  OpenSCAD library, it doesn't fill a particular niche or provide routines for one particular type of part or element, although some basic machine parts are included.
+
+The GHOUL is being written and compiled by me, Hank Jr, with the goal of being the one and only OpenSCAD library that *I* will ever need--as close to that as I can get it anyway--readable and clear and easily adaptable. I'm sharing it in the hope that it may be of use to you. It's a work in progress; far from perfect, and probably never will be--but it's already mightily useful as it is, and as I read somewherefootnote:[I'd like to give the Emperor what's his, but I can't remember for the life of me where I read that quote...] on the wondrous web:
+
+[quote, Forgotten source.]
+It is never finished, so it already is.
+
+Hopefully The GHOUL will help you and others, and maybe it will become someone else's 'go-to library' as well.
+
+== What does The GHOUL do?
+
+Hopefully it does everything you need it to do. The GHOUL is meant to be a generally useful library for OpenSCAD, it's growing naturally as and when I need more functions and modules for my work with OpenSCAD. It contains lots of useful primitive shapes, curve generation routines, mesh generation and array manipulation to help you design organic shapes like this gearshift-knob, animation, simple objects and parts, useful helper objects, organic shapes, threads and machine parts, gears, not too much on string manipulation, why are some people so damn eager to use a parametric CAD software to parse text? +
+Despite the lack of string-stuff, The GHOUL _does_ have a *fully fledged SVG library*! I'm more than a little proud of that one. There's lots, even a simple Braille generation routine.
+
+=== A little help for your friends
+
+Before I forget: if you _are_ using OpenSCAD, be fair, help out, slip 'em a few bucks. Just do it to ease your conscience, or for bragging rights, either way: Don't be stingy. It frankly is (one of) the best way(s) to model solids for 3D printing and many other applications. Talking about 'other applications'; I have had _so much fun_ making the illustrations, examples and images for this documentation, I find myself looking for an excuse to make another illustration all the time.
+It's utterly satisfying work!
+
+A little more on the subject of fairness: I've read and tinkered with lots of code since the early 80's, and it's entirely possible that you're looking at some code in The GHOUL, and you think: "That looks an awful lot like something I've written...". It probably does; I may have read your recipe for an omelette, and later written a recipe myself, but that doesn't mean I copied you; there wouldn't be too many cookbooks out there, would there? Just like <https://en.wikipedia.org/wiki/Elisha_Gray_and_Alexander_Bell_telephone_controversy>[Elisha and Alexander], we may have had the same ideas, and your `RadToDeg()` is likely similar to a few others, it better be...
+
+Having said all that, if you feel you should be mentioned because of a deeply felt conviction that I'm using your code, communicate your concern. We'll figure it out.
+
+Finally, check out the un-licensing for The GHOUL. Yes, that's right, no strings attached; it's all yours.
+
+== What's NEW?
+
+Nov 2022: Beautiful, well formed involute spur gears and racks with proper trochoid flanks--where needed--and profile shift are now part of The GHOUL. The gears library is far from finished, and _much_ remains to be done, however I felt I should share the beginnings of it now.
+
+=== What's next?
+
+I'm fiddling a bit more with the (involute) spur gear library, then I'm going to expand the gear library with helical and worm gears... After that, I'm planning some more exotic gear profiles, and after that, whatever comes after that comes after that, I'm open to ideas, let me know if you have any...
+
+== An FDM warning.
+
+[WARNING]
+====
+3D Printing functional objects is a fun challenge and can be enormously convenient and helpful, however, I'm and engineer, and I see some scary stuff on the wondrous web so I feel a strong need to tell you this:
+
+DO NOT EVER rely on the mechanical strength of a printed object if the FAILURE of that object presents a RISK OF ANY KIND.
+
+3D printed things you should NEVER rely on:
+
+* Load bearing threads.
+* Threads used in piping that contains ANY pressure.
+* Anything used to connect (garden)hoses that contain ANY pressure.
+* Lifting devices.
+* Hooks &c. that support a load.
+* ANY object intended to control or contain an energy source of ANY kind:
+** a coiled spring
+** a load
+** a force
+** pressure
+** tension
+** weight
+** ANYTHING
+
+Consider chemical and physical compatibility, strength requirements, the whole gambit, sure, food-safety too.
+There's a reason products get tested in labs and come with warning labels: CONSUMER SAFETY (and plausible deniability).
+
+Please consider the safety of other people, children and animals in your environment, that's my real worry here. As far as yourself, I wish you no harm, but if you're a stubborn individual who refuses to take heed of a well-meant warning, there's always natural selection.
+
+If you don't know *for sure* that something's safe, get advice, ask a friend.
+Don't die.
+Don't become a statistic.
+And never forget: You don't know what you don't know.
+
+USE YOUR COMMON SENSE, not many people do...
+====
